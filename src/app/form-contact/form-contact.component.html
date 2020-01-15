@@ -1,0 +1,36 @@
+<section class="section " >
+    <div class="container">
+      <div class="row justify-content-center mt--300">
+        <div class="col-lg-8">
+          <div class="card shadow">
+            <div class="card-body p-lg-5">
+              <h4 class="mb-1">Precisa de ajuda?</h4>
+              <p class="mt-0">Seu projeto é importante para nós.</p>
+              <div class="form-group mt-5" [ngClass]="{'focused':focus===true}">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-user-run"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="Como gostaria de ser chamado?" type="text" (focus)="focus=true" (blur)="focus=false">
+                </div>
+              </div>
+              <div class="form-group" [ngClass]="{'focused':focus1===true}">
+                <div class="input-group input-group-alternative">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="Seu email" type="email" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <textarea class="form-control form-control-alternative" name="name" rows="4" cols="80" placeholder="Escreva sua mensagem que entraremos em contato"></textarea>
+              </div>
+              <div>
+                <button type="button" class="btn btn-default btn-round btn-block btn-lg">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
